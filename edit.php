@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat Sistem CRUD Dengan PHP dan PHPMyAdmin Dan Menampilkan data dari database</title>
+	<title>Membuat sistem CRUD Dengan PHP Dan MySQL dan Menampilkan data dari database</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="judul">
 		<h1>Membuat Sistem CRUD Dengan PHP Dan MySQL</h1>
-		<h3>Menampilkan data dari database</h3>
-
+		<h3>Edit data dari database</h3>
 	</div>
 
 	<br/>
@@ -16,12 +15,12 @@
 	<a href="index.php">Lihat Semua Data</a>
 
 	<br/>
-	<h3>Input data baru</h3>
-	<form action="input-2.php" method="post">
+	<h3>Edit data</h3>
+	<form action="edit-2.php" method="post">
 		<table>
       <tr>
-        	<td>Id</td>
-        	<td><input type="number" name="id"></td>
+        <td>Id</td>
+        <td><input type="number" name="id"></td>
       </tr>
 			<tr>
 				<td>Username</td>
