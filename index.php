@@ -15,8 +15,7 @@
   	<th>password</th>
   	<th>level</th>
   	<th>fullname</th>
-    <th>pilihan</th>
-    <th>pilihan</th>
+    <th>opsi</th>
   </tr></div>
   <?php
   //  1. Lakukan include koneksi.php untuk membuat koneksi
@@ -34,8 +33,12 @@
       <td><?php echo $baris_data['password']; ?></td>
       <td><?php echo $baris_data['level']; ?></td>
       <td><?php echo $baris_data['fullname']; ?></td>
-      <td><a class="edit" href="edit.php id=<?php echo $baris_data['id']; ?>">Edit</a></td>
-      <td><a class="hapus" href="delete.php id=<?php echo $baris_data['id']; ?>">Hapus</a></td>
+     <td>
+      <a onclick="return confirm('Yakin untuk menghapus ?')"
+      href="delete.php?id=<?php echo $baris_data['id']; ?>">Hapus</a>|
+      <a href="edit.php?id=<?php echo $baris_data['id']; ?>">Edit</a>
+      </td>
+
     </tr>
 <?php } ?>
 </body>

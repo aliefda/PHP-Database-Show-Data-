@@ -32,6 +32,8 @@
 			</tr>
 			<tr>
 				<td>Level</td>
+
+				
 				<td><input type="text" name="level"></td>
 			</tr>
       <tr>
